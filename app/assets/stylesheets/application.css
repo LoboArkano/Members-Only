@@ -13,12 +13,19 @@
  *= require_tree .
  *= require_self
  */
- @import "bulma";
+@import "bulma";
 
- h1 {
-   color: white !important;
- }
+h1 {
+  color: white !important;
+}
 
- .card {
-   margin-right: 30px;
- }
+.card {
+  margin-right: 30px;
+}
+
+.status {
+  justify-content: center;
+  flex-grow: 1;
+  color: white;
+  font-size: 18px;
+}
