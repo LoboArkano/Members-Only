@@ -14,3 +14,11 @@
  *= require_self
  */
  @import "bulma";
+
+ h1 {
+   color: white !important;
+ }
+
+ .card {
+   margin-right: 30px;
+ }
