@@ -1,0 +1,15 @@
+<% @posts.each do |post| %>
+  <div class="box">
+    <div>
+      <%= post.title %>
+    </div>
+    <div>
+      <%= post.body %>
+    </div>
+    <% if user_signed_in? %>
+      <div>
+        <%= post.user.name %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
