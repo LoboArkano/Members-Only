@@ -1,0 +1,27 @@
+<% @posts.each do |post| %>
+
+  <div class="card">
+    <div class ="card-content">
+      <div class = "title is-5">
+        <%= post.title %>
+      </div>
+      <div>
+        <%= post.body %>
+      </div>
+      <% if user_signed_in? %>
+        <div class = "card-footer">
+          
+          <div class = "card-footer-item">
+            <p>
+            <strong>Author</strong>
+            <span>
+              <%= post.user.name %>
+            </span>
+            </p> 
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+<% end %>
